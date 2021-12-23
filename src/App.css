@@ -35,7 +35,6 @@ body {
   overflow-y: hidden;
   overflow-x: scroll;
   padding: 20px;
-  background-color: red;
 }
 /* Scrolling bar under the row to disappear */
 .row-container::-webkit-scrollbar {
