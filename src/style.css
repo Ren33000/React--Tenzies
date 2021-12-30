@@ -36,7 +36,7 @@ main {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .die-num {

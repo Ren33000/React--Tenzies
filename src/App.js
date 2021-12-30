@@ -15,7 +15,7 @@ export default function App() {
     for (let i = 0; i < 10; i++) {
         newDice.push({
           value: Math.ceil(Math.random() * 6),
-          isHeld: true,
+          isHeld: false,
           id: nanoid()
         }) 
         // Math.ceil= start arr at 1 (.floor starts at 0)
@@ -27,8 +27,21 @@ export default function App() {
       setDice(allNewDice())
     }
 
+    function holdDice (id) {
+      setDice(oldDice => oldDice.map(die => {
+        return die.id === id ?
+          {...die, isHeld: !die.isHeld} : die
+      }))
+    }
+
     // MAP OVER DICE STATE TO GET NEW NUMBERS RENDERED
-    const diceElements = dice.map(die => <Die key={die.id} value={die.value} />)
+    const diceElements = dice.map(die => 
+    <Die 
+      key={die.id} 
+      value={die.value} 
+      isHeld={die.isHeld} 
+      holdDice={() => holdDice(die.id)} 
+    />)
 
     return (
         <main>
