@@ -1,3 +1,15 @@
+<h1 align="center">Tenzies game</h1>
+<h3 align="center">Last project of Scrimba React course</h3>
+
+<p align="center">
+  <img src="https://github.com/Ren33000/React--Tenzies/blob/master/Screen%20Shot%202021-12-30%20at%2011.23.22.png" alt="Result"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/Ren33000/React--Tenzies/blob/master/Screen%20Shot%202021-12-30%20at%2011.23.47.png" alt="Figma file"/>
+</p>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
